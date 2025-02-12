@@ -1,0 +1,31 @@
+.ticket-selection-cointainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aqua;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+}
+.event-details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: red;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.ticket-type-container {
+    display: flex;
+    gap: 10%;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+.select-buttton {
+    width: 200px;
+}
+.next-cointainer {
+    display: flex;
+    gap: 30px;
+}
