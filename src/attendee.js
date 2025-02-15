@@ -5,6 +5,7 @@ import Navbar from './navbar';
 import { useNavigate } from "react-router-dom";
 
 const DragAndDropUpload = () => {
+  const [progress, setProgress] = useState(1);
   // Form state variables
   const [imageUrl, setImageUrl] = useState(localStorage.getItem('uploadedImage') || '');
   const [name, setName] = useState('');
@@ -35,6 +36,9 @@ const DragAndDropUpload = () => {
       uploadImage(file);
     }
   };
+  const handleNext = () => {
+    setProgress((prev) => (prev < 100 ? prev + 10 : 100)); // Increase by 10%, max 100%
+};
 
 
  const validateForm = () => {
@@ -106,8 +110,11 @@ const DragAndDropUpload = () => {
             <div>1/3</div>
 
         </div>
+        <div className="progress-container">
+                    <div className="progress-bar" style={{ width: `${progress}%` }} />
+                </div>
       <div className="upload-container">
-        <h4 className="image-name">Upload Your Image</h4>
+        <p className="image-name">Upload Profile Photo</p>
         <div 
           className="drop-zone"
           onDrop={handleDrop}

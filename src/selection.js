@@ -4,23 +4,35 @@ import { useNavigate } from "react-router-dom";
 import Navbar from './navbar';
 
 function Selection() {
-    const [progress, setProgress] = useState(0);
+    const [step, setStep] = useState(1);  
+    const [progress, setProgress] = useState(33);  
+    
     const navigate = useNavigate();
     
-    // Track selected ticket type and number of tickets
+    
     const [selectedTicket, setSelectedTicket] = useState("Regular");
     const [numTickets, setNumTickets] = useState(1);
 
+
     const handleNext = () => {
-        setProgress((prev) => (prev < 100 ? prev + 10 : 100)); // Increase by 10%, max 100%
+        if (step < 3) {  // Ensure we don't exceed step 3
+            setStep(step + 1);
+            setProgress((step + 1) * 33); // Increase progress (33% for each step)
+        }
+
+        if (step === 2) { 
+            handleSubmit();
+        }
     };
 
-    // Handle ticket type selection
+    
+
+   
     const handleTicketSelection = (ticketType) => {
         setSelectedTicket(ticketType);
     };
 
-    // Handle form submission
+    
     const handleSubmit = () => {
         navigate("/attendee", { state: { selectedTicket, numTickets } });
     };
