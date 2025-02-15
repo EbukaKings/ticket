@@ -1,0 +1,75 @@
+/* Navbar container */
+.navbar-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    height: 76px;
+    background: rgba(5, 37, 44, 0.4);
+    border: 1px solid #197686;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: #05252C;
+}
+
+/* Image container */
+.image-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Logo sizes */
+.vectorimage {
+    width: 20px;
+    height: 20px;
+}
+
+.ticzimage {
+    width: 44px;
+    height: 23px;
+}
+
+/* Events container */
+.events-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: white;
+}
+
+/* Ticket button */
+.ticket {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 169px;
+    height: 52px;
+    background: #FFFFFF;
+    border: 2px solid rgba(213, 234, 0, 0.1);
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {  
+    .navbar-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 320px;
+        height: 68px;
+        padding: 0 10px;
+        align-items: center;
+    }
+
+    .events-container {
+        display: none; 
+    }
+
+    .ticket {
+        width: auto;
+        padding: 10px;
+        font-size: 14px;
+    }
+}

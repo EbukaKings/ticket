@@ -1,0 +1,142 @@
+.upload-container1 {
+    height: 1083px;
+    
+    border-style: solid;
+    border-color: #0E464F;
+    border-radius: 3px;
+    background-color: #08252B;
+    
+}
+.upload-container2 {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #0E464F;
+    border-radius: 3px;
+    background-color: #08252B;
+    height: 907px;
+    background-color: #041E23;
+}
+.drop-zone {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  width: 240px;
+  height: 240px;
+  border: 2px dashed #0E464F;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  background-color: #0E464F;
+ 
+  overflow: hidden; 
+  padding: 10px; 
+}
+.image-container {
+    background-color: #0E464F;
+    color: #eaeaea;
+}
+.uploaded-image {
+    height: 50px;
+    width: 40px;
+}
+.hr {
+    display: block;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    unicode-bidi: isolate;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
+.hr {
+    border: none; /* Remove default styling */
+    height: 2px; /* Set thickness */
+    background-color: #0E464F; /* Set color */
+    margin: 20px 0; /* Add spacing above/below */
+    width: 100%; /* Ensure it spans across the container */
+  }
+  .form-container {
+    color: #eaeaea;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the left */
+    justify-content: flex-start; /* Align content to the top */
+    gap: 10px; /* Add spacing between elements */
+}
+
+.input-field {
+    width: 100%; /* Adjust width to fit container */
+    padding: 10px;
+    border: 1px solid #0E464F; /* Match border style */
+    border-radius: 3px;
+    background-color: #041E23;
+    color: white; /* Ensure text is visible */
+}
+
+
+.upload-icon {
+    
+    width: 27px;
+    height: 19px;
+}
+
+
+
+.uploaded-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.image-container {
+    
+}
+.upload-img {
+    width: 50px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.image-name {
+    color: white;
+}
+.upload-button {
+    background: none;
+    border: none;
+    color: #007BFF;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: normal;
+}
+.upload-profile-div {
+    display: flex;
+    
+}
+.input-cointainer {
+    margin-top: 80px;
+    background-color: aqua;
+    border-width: 1px;
+    border-radius: 3px;
+}
+.upload-img-div {
+    display: flex;
+    align-items: center;
+}
+.upload-container {
+    height: 328px;
+    width: 556px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #0E464F;
+    border-radius: 3px;
+    background-color: #08252B;
+    display: flex;
+    
+}
